@@ -1,3 +1,3 @@
 # design1
 
-Visit: https://saadgulzar.tech/design1/.
+Visit: https://saadgulzar.tech/design1/
