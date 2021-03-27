@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+body, html {
+    font-family: 'Lato' !important;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.border-3{
+    border-width:3px !important; 
+}
+.text-40px {
+    font-size: 40px !important;
+}
+.boxShadow {
+    box-shadow: 3px 3px #202020 !important;
+}
+#main {
+    background:  url('./assets/images/bg.png') no-repeat center center;
+    background-size: cover;
+}
+:root {
+    --CBgreen : #72B42B;
+}
+.text-green {
+    color: var(--CBgreen);
+}
+.bg-green {
+    background-color: var(--CBgreen);
+}
+.active {
+    font-weight: bold;
+    color: var(--CBgreen);
+}
+
+#MobileNav {
+    background: var(--CBgreen);
+}
+
+/* Menu as a whole animated */
+#MobileNav {
+    display: block;
+}
+#MobileNav.hidden {
+    display: none;
+}
+#MobileNav{
+    display: block;
+    opacity: 1;
+}    
+#MobileNav {
+    animation: growDown 350ms ease-in-out forwards;
+    transform-origin: top center;
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.customBtn {
+    background-image: url('./assets/images/Shape.png'); 
+    background-size: 100% 100%;
+    display: inline-block; 
+    border: none;
+    transition: all 0.5s; 
+    cursor: pointer;
+}
+#footer {
+    background-image: url('./assets/images/footer.png');
+    background-size: 100% 100%;
+}
+@media screen and (min-width:640px) and (max-width:1024px){
+    #hero-section {
+        height: 392px;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width:640px) {
+    #hero-section {
+        height: 292px;
+        background-size: 100% 100%;
+    }
+}
